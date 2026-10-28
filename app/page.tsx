@@ -64,7 +64,7 @@ export default function Home() {
       <section className="wrap pb-[76px] pt-6">
         <div className="grid gap-px overflow-hidden rounded-[22px] border border-ink/[0.12] bg-ink/[0.12] sm:grid-cols-2 md:grid-cols-4">
           {PILLARS[lang].map((p) => (
-            <div key={p.num} className="bg-[#F6F4EC] px-6 py-[26px]">
+            <div key={p.num} className="bg-ink/[0.035] px-6 py-[26px]">
               <div className="h-display mb-3 text-xl font-semibold tracking-[-0.02em] text-green">{p.num}</div>
               <div className="mb-1.5 text-[15.5px] font-semibold">{p.title}</div>
               <div className="text-[13.5px] leading-[1.55] text-ink/60">{p.body}</div>
@@ -92,7 +92,7 @@ export default function Home() {
                 <div className="h-display mb-3.5 text-[34px] font-semibold leading-none tracking-[-0.04em]">{t.quizCardTitle}</div>
                 <p className="m-0 text-sm leading-[1.6] text-ink/70">{t.quizCardBody}</p>
               </div>
-              <Link href="/quiz/" className="btn btn-primary mt-[22px] self-start px-[22px] py-3.5 text-[14.5px]">{t.quizCardCta}</Link>
+              <Link href="/quiz/" className="btn btn-primary mt-[22px] px-[22px] py-3.5 text-center text-[14.5px]">{t.quizCardCta}</Link>
             </div>
           </div>
         </div>

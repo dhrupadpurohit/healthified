@@ -7,7 +7,7 @@ import { Footer } from '@/components/Footer';
 import { Toast } from '@/components/Toast';
 
 const grotesk = Familjen_Grotesk({ subsets: ['latin'], variable: '--font-grotesk', weight: ['400', '500', '600', '700'] });
-const dm = DM_Sans({ subsets: ['latin'], variable: '--font-dm', weight: ['400', '500', '600', '700'] });
+const dm = DM_Sans({ subsets: ['latin'], variable: '--font-dm', axes: ['opsz'], style: ['normal', 'italic'] });
 
 export const metadata: Metadata = {
   title: 'Healthified – Ät bra. Må bra.',
