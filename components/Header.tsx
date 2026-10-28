@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { useStore } from '@/lib/store';
-import { Logo } from './Logo';
+import { asset } from '@/lib/utils';
 
 function Ticker() {
   const { t } = useStore();
@@ -39,7 +39,8 @@ export function Header() {
       <header className="sticky top-0 z-40 border-b border-ink/10 bg-cream/80 backdrop-blur-[16px]">
         <div className="wrap flex items-center gap-3 py-3.5 md:gap-7">
           <Link href="/" className="block flex-none" onClick={close}>
-            <Logo />
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={asset('/brand/cropped-HEALTHIFIED-4-1.png')} alt="Healthified" className="block h-8" />
           </Link>
 
           <nav className="ml-2 hidden flex-1 items-center gap-4 md:flex xl:gap-[26px]">

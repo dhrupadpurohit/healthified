@@ -15,7 +15,7 @@ export default function AboutPage() {
           <h1 className="h-display mb-6 text-[clamp(44px,9vw,74px)] leading-[0.92] tracking-[-0.045em]">{t.aboutTitle}</h1>
           <p className="m-0 max-w-[50ch] text-[19px] leading-[1.6] text-ink/70 [text-wrap:pretty]">{t.aboutLead}</p>
         </div>
-        <Showcase variant="hero" />
+        <Showcase variant="hero" width="w-[82%]" />
       </section>
       <section className="wrap pb-[88px] pt-[30px]">
         <div className="grid gap-[46px] border-y-[1.5px] border-ink/25 py-11 md:grid-cols-2">

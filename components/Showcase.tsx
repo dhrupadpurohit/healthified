@@ -8,31 +8,20 @@ const bg: Record<Variant, string> = {
   made: 'bg-[linear-gradient(150deg,#F3F2E7_0%,#E1EEC5_100%)]',
 };
 
-// Produktbilderna har vit bakgrund och multipliceras in i panelens gradient.
-const imgs: Record<Variant, { src: string; cls: string }[]> = {
-  hero: [{ src: '/products/bundle-omega-d3.webp', cls: 'w-[62%] animate-[floatY_8s_ease-in-out_infinite]' }],
-  sub: [
-    { src: '/products/boost.webp', cls: 'left-[6%] top-[12%] w-[42%] -rotate-6' },
-    { src: '/products/hud.webp', cls: 'right-[4%] top-[34%] w-[42%] rotate-6' },
-    { src: '/products/d3.webp', cls: 'bottom-[4%] left-[26%] w-[40%]' },
-  ],
-  made: [
-    { src: '/products/multivitamin.webp', cls: 'left-[8%] top-[14%] w-[40%] -rotate-3' },
-    { src: '/products/omega.webp', cls: 'bottom-[8%] right-[8%] w-[42%] rotate-3' },
-  ],
+const art: Record<Variant, string> = {
+  hero: '/brand/Group-1413371941.png',
+  sub: '/brand/Group-1413371334.png',
+  made: '/brand/Group-1413371333.png',
 };
 
-export function Showcase({ variant, ratio = 'aspect-square', radius = 'rounded-[28px]', className = '' }: {
-  variant: Variant; ratio?: string; radius?: string; className?: string;
+/** Illustrationspanel enligt designen. `width` är bildens bredd i panelen. */
+export function Showcase({ variant, width = 'w-[84%]', float = false, ratio = 'aspect-square', radius = 'rounded-[28px]', className = '' }: {
+  variant: Variant; width?: string; float?: boolean; ratio?: string; radius?: string; className?: string;
 }) {
-  const list = imgs[variant];
-  const single = variant === 'hero';
   return (
-    <div className={`relative overflow-hidden ${ratio} ${radius} ${bg[variant]} ${single ? 'grid place-items-center' : ''} ${className}`}>
-      {list.map((i) => (
-        // eslint-disable-next-line @next/next/no-img-element
-        <img key={i.src} src={asset(i.src)} alt="" className={`${single ? 'relative' : 'absolute'} mix-blend-multiply ${i.cls}`} />
-      ))}
+    <div className={`relative grid place-items-center overflow-hidden ${ratio} ${radius} ${bg[variant]} ${className}`}>
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img src={asset(art[variant])} alt="" className={`relative ${width} ${float ? 'animate-[floatY_8s_ease-in-out_infinite]' : ''}`} />
     </div>
   );
 }

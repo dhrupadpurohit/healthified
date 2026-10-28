@@ -35,8 +35,6 @@ node scripts/optimize-images.mjs <mapp-med-originalpng>
 
 ## Att åtgärda innan skarp lansering
 
-- Logotyp och illustrationer: healthified.se går inte att länka till (felaktigt certifikat, 404). Logotypen är en textlogotyp
-  (`components/Logo.tsx`) och illustrationsrutorna visar produktbilder (`components/Showcase.tsx`). Lägg in originalen i `public/` när de finns.
 - Näringsvärden för Omega 3 och Fatburner är hämtade från etiketterna på produktbilderna. Etiketten för Fatburner anger krom som "50 mg"
   men 125 % av referensintaget motsvarar 50 µg – verifiera. Omega 3-etiketten anger 2 kapslar per portion men rekommenderar 3 kapslar dagligen.
   Övriga produkters värden är platshållare.

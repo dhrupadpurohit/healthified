@@ -49,7 +49,7 @@ export default function Home() {
         </div>
 
         <div className="relative">
-          <Showcase variant="hero" radius="rounded-[32px]" className="border border-ink/[0.14]" />
+          <Showcase variant="hero" width="w-[84%]" float radius="rounded-[32px]" className="border border-ink/[0.14]" />
           <div className="absolute right-2.5 top-[22px] flex flex-col items-center gap-[9px] rounded-[20px] border border-ink/[0.16] bg-cream px-4 pb-[13px] pt-3.5 shadow-[0_14px_30px_-18px_rgba(34,53,42,0.4)]">
             <div className="relative h-[25px] w-10 overflow-hidden rounded-[3px] bg-[#005293]">
               <div className="absolute inset-x-0 top-2.5 h-[5px] bg-[#FECB00]" />
@@ -102,7 +102,7 @@ export default function Home() {
       <section id="prenumeration" className="wrap scroll-mt-[70px] py-[88px]">
         <div className="grid items-center gap-14 md:grid-cols-[0.88fr_1.12fr]">
           <div className="relative">
-            <Showcase variant="sub" ratio="aspect-[4/5]" />
+            <Showcase variant="sub" width="w-[88%]" ratio="aspect-[4/5]" />
             <div className="absolute -bottom-[18px] right-0 max-w-[210px] rounded-[20px] border border-ink/20 bg-cream px-[22px] py-[18px] md:-right-[18px]">
               <div className="h-display mb-[7px] text-[30px] font-semibold leading-none tracking-[-0.04em] text-green">{t.subStatNum}</div>
               <div className="text-[12.5px] leading-[1.45] text-ink/75">{t.subStatLabel}</div>
@@ -198,7 +198,7 @@ export default function Home() {
               ))}
             </div>
           </div>
-          <Showcase variant="made" />
+          <Showcase variant="made" width="w-[86%]" />
         </div>
       </section>
 
