@@ -10,15 +10,15 @@ const bg: Record<Variant, string> = {
 
 // Produktbilderna har vit bakgrund och multipliceras in i panelens gradient.
 const imgs: Record<Variant, { src: string; cls: string }[]> = {
-  hero: [{ src: '/products/bundle-omega-d3.webp', cls: 'w-[96%] animate-[floatY_8s_ease-in-out_infinite]' }],
+  hero: [{ src: '/products/bundle-omega-d3.webp', cls: 'w-[62%] animate-[floatY_8s_ease-in-out_infinite]' }],
   sub: [
-    { src: '/products/boost.webp', cls: 'left-[-6%] top-[6%] w-[68%] -rotate-6' },
-    { src: '/products/hud.webp', cls: 'right-[-8%] top-[30%] w-[68%] rotate-6' },
-    { src: '/products/d3.webp', cls: 'bottom-[-6%] left-[14%] w-[62%]' },
+    { src: '/products/boost.webp', cls: 'left-[6%] top-[12%] w-[42%] -rotate-6' },
+    { src: '/products/hud.webp', cls: 'right-[4%] top-[34%] w-[42%] rotate-6' },
+    { src: '/products/d3.webp', cls: 'bottom-[4%] left-[26%] w-[40%]' },
   ],
   made: [
-    { src: '/products/multivitamin.webp', cls: 'left-[-4%] top-[8%] w-[64%] -rotate-3' },
-    { src: '/products/omega.webp', cls: 'bottom-[-2%] right-[-4%] w-[66%] rotate-3' },
+    { src: '/products/multivitamin.webp', cls: 'left-[8%] top-[14%] w-[40%] -rotate-3' },
+    { src: '/products/omega.webp', cls: 'bottom-[8%] right-[8%] w-[42%] rotate-3' },
   ],
 };
 
